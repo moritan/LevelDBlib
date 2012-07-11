@@ -1,3 +1,9 @@
+
+Using LevelDB_Android_lib consists on applying the LevelDB_Android_lib project as a library to your application. 
+A complete description on how to use library projects is given on the Android documentation website. 
+Make sure your development environment uses the latest tools and platforms, since older releases of the tools and platforms do not support building with library project.
+
+
 leveldb: A key-value store
 Authors: Sanjay Ghemawat (sanjay@google.com) and Jeff Dean (jeff@google.com)
 
