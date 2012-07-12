@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>LevelDB  Android by moritan</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>LevelDB  Android</h1>
+        <p>Android port of LevelDB Database</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/moritan/LevelDBlib" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/moritan/LevelDBlib/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/moritan/LevelDBlib/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h3>LevelDB Android Port.</h3>
+
+<p><a href="https://code.google.com/p/leveldb/">LevelDB</a> is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.
+LevelDB is expose through jni in Android project. A helper class is provide with this project.</p>
+
+<h3>Usage</h3>
+
+<ul>
+<li>Clone the project</li>
+<li>Import in Eclipse</li>
+<li>Compile with NDK</li>
+<li>Use LevelDB Android as Library in your project</li>
+</ul><h3>Features of LevelDB</h3>
+
+<ul>
+<li>Keys and values are arbitrary byte arrays.</li>
+<li>Data is stored sorted by key.</li>
+<li>Callers can provide a custom comparison function to override the sort order.</li>
+<li>The basic operations are Put(key,value), Get(key), Delete(key).</li>
+<li>Multiple changes can be made in one atomic batch.</li>
+<li>Users can create a transient snapshot to get a consistent view of data.</li>
+<li>Forward and backward iteration is supported over the data.</li>
+<li>Data is automatically compressed using the Snappy compression library.</li>
+<li>External activity (file system operations etc.) is relayed through a virtual interface so users can customize the operating system interactions.</li>
+<li>Detailed documentation about how to use the library is included with the source code.</li>
+</ul><h3>Limitations</h3>
+
+<ul>
+<li>This is not a SQL database. It does not have a relational data model, it does not support SQL queries, and it has no support for indexes.</li>
+<li>Only a single process (possibly multi-threaded) can access a particular database at a time.</li>
+<li>There is no client-server support builtin to the library. An application that needs such support will have to wrap their own server around the library.</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/moritan">moritan</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
